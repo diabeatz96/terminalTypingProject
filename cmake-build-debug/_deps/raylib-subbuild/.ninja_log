@@ -1,0 +1,21 @@
+# ninja log v5
+0	116	6655382022637254	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	846e145c91360d3c
+3212	3239	6655389319942952	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	6d37945723412671
+0	116	6655382022637254	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	846e145c91360d3c
+1	3186	6655389319424344	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	390905df9bfd55ac
+1	3186	6655389319424344	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	390905df9bfd55ac
+3187	3212	6655389319683651	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	2e75dbc7415d8f7a
+3264	3291	6655389320461567	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	f927147b302691e1
+3264	3291	6655389320461567	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	f927147b302691e1
+3187	3212	6655389319683651	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	2e75dbc7415d8f7a
+3212	3239	6655389319942952	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	6d37945723412671
+3239	3264	6655389320202267	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	42b99661c75cc75e
+3239	3264	6655389320202267	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	42b99661c75cc75e
+3291	3317	6655389320730852	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	df95ffb9701f266c
+3291	3317	6655389320730852	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	df95ffb9701f266c
+3317	3344	6655389320990160	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	3bd21cda45481405
+3317	3344	6655389320990160	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	3bd21cda45481405
+3344	3381	6655389321369144	CMakeFiles/raylib-populate-complete	1fea68865003a411
+3344	3381	6655389321369144	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	1fea68865003a411
+3344	3381	6655389321369144	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	1fea68865003a411
+3344	3381	6655389321369144	C:/Users/Adam/CLionProjects/commandLineHWversion/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	1fea68865003a411
