@@ -41,6 +41,8 @@ public:
     void displayAll();
     void searchAutoComplete();
     void loadFile();
+    void backSpace(char ch);
+    void characterPress(char ch);
 
 };
 

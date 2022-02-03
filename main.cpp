@@ -14,41 +14,30 @@ int main() {
         char ch;
 
         while(!gameOver){
+
             if(_kbhit()) {
                 system("cls");
+                std::cout << R"(
+
+                 _                   _____                     _
+     /\         (_)                 / ____|                   | |
+    /  \   _ __  _ _ __ ___   ___  | (___   ___  __ _ _ __ ___| |__
+   / /\ \ | '_ \| | '_ ` _ \ / _ \  \___ \ / _ \/ _` | '__/ __| '_ \
+  / ____ \| | | | | | | | | |  __/  ____) |  __/ (_| | | | (__| | | |
+ /_/    \_\_| |_|_|_| |_| |_|\___| |_____/ \___|\__,_|_|  \___|_| |_|
+
+
+
+)" << '\n';
                 ch = getch();
                 if (int(ch) == 27) {
                     break;
                 }
                 if (int(ch) == 8) {
-                    newBag.letterCount--;
-                    if(newBag.letterCount< 0) {
-                        newBag.letterCount = 0;
-                        cout << newBag.input;
-                    }
-                    newBag.input[newBag.letterCount] = '\0';
-                    cout << newBag.input;
-                    if(newBag.letterCount > 2) {
-                        newBag.searchAutoComplete();
-                    } else {
-                        newBag.displayAll();
-                    }
+                newBag.backSpace(ch);
                 } else {
-                    if(newBag.letterCount > 1) {
-                        newBag.input[newBag.letterCount] = static_cast<char>(ch);
-                        newBag.input[newBag.letterCount + 1] = '\0';
-                        newBag.letterCount++;
-                        cout << newBag.input;
-                        newBag.searchAutoComplete();
-                    } else {
-                        newBag.input[newBag.letterCount] = static_cast<char>(ch);
-                        newBag.input[newBag.letterCount + 1] = '\0';
-                        newBag.letterCount++;
-                        cout << newBag.input;
-                        newBag.displayAll();
-                    }
+                    newBag.characterPress(ch);
                 }
             }
-
         }
     }

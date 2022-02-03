@@ -59,7 +59,7 @@ void Bag::setLetterCount(int letterCount) {
 void Bag::loadFile() {
     ifstream inFile;
     string line;
-    inFile.open("C:\\Users\\Adam\\CLionProjects\\autoComplete\\assests\\scratch.txt"); //Absolute path for now cause im bad.
+    inFile.open("C:\\Users\\bigbl\\CLionProjects\\autoComplete\\assests\\scratch.txt"); //Absolute path for now cause im bad.
 
     /* Check if file is open, if it isn't we are going to push a value into animelist in the vector */
     if(inFile.is_open()) {
@@ -72,3 +72,35 @@ void Bag::loadFile() {
     }
 }
 
+void Bag::backSpace(char ch) {
+    letterCount--;
+    if(letterCount< 0) {
+        letterCount = 0;
+        cout << input;
+    }
+    input[letterCount] = '\0';
+    cout << input;
+    if(letterCount > 2) {
+        cout << endl << endl <<  "-------SEARCH RESULTS-------: " << endl;
+        searchAutoComplete();
+    } else {
+        displayAll();
+    }
+}
+
+void Bag::characterPress(char ch) {
+    if (letterCount > 1) {
+        input[letterCount] = static_cast<char>(ch);
+        input[letterCount + 1] = '\0';
+        letterCount++;
+        cout << input;
+        cout << endl << endl <<  "-------SEARCH RESULTS-------: " << endl;
+        searchAutoComplete();
+    } else {
+        input[letterCount] = static_cast<char>(ch);
+        input[letterCount + 1] = '\0';
+        letterCount++;
+        cout << input;
+        displayAll();
+    }
+}
