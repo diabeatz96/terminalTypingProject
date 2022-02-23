@@ -30,7 +30,7 @@ endif ()
 
 # This is the main part:
 
-add_executable(commandLineHWversion main.cpp Bag.h Bag.cpp)
+add_executable(commandLineHWversion main.cpp List.h List.cpp)
 
 target_link_libraries(commandLineHWversion raylib)
 

@@ -1,14 +1,13 @@
 #include <iostream>
-#include <raylib.h>
-#include "Bag.h"
+#include "List.h"
 #include <conio.h>
 
 
 int main() {
 
     bool gameOver = false;
-    Bag newBag;
-    newBag.loadFile();
+    List newList;
+    newList.loadFile();
 
 
         char ch;
@@ -17,6 +16,7 @@ int main() {
 
             if(_kbhit()) {
                 system("cls");
+                newList.textcolor(5);
                 std::cout << R"(
 
                  _                   _____                     _
@@ -34,10 +34,14 @@ int main() {
                     break;
                 }
                 if (int(ch) == 8) {
-                newBag.backSpace(ch);
+                newList.backSpace(ch);
                 } else {
-                    newBag.characterPress(ch);
+                    newList.characterPress(ch);
                 }
             }
         }
-    }
+
+
+
+
+}
